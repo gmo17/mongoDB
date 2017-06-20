@@ -54,7 +54,7 @@ app.listen(3000, function() {
   console.log('listening on 3000');
 })*/
 
-MongoClient.connect('mongodb://admins:admins@ds123722.mlab.com:23722/unicorns', function(err, database) {
+MongoClient.connect('mongodb://localhost:27017/dbsName', function(err, database) {
   if (err) return console.log(err)
   db = database
   app.listen(3000, function(){
