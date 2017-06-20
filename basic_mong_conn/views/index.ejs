@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MY APP</title>
+    <link rel='stylesheet' type='text/css' href='/stylesheets/style.css'></link>
+  </head>
+  <body>
+    <section id="wrapper">
+      <section id="banner">
+        <h1>Express MongoDB</h1>
+      </section><!--/ banner-->
+
+      <section id="mainSectn">
+        <section id="cat">
+          <article>
+            <h2>Music Catalog</h2>
+            <table class="albums" id="tbl">
+            <% for(var i=0; i<albums.length; i++) {%>
+              <tr class="albums">
+                <th rowspan="6">img:</th>
+                <td><span class="bld">Artist: </span><%= albums[i].artist %></td>
+              </tr>
+
+                <tr>
+                <td><span class="bld">Title: </span><%= albums[i].title %></td>
+                </tr>
+
+                <tr>
+                <td><span class="bld">Country: </span><%= albums[i].country %></td>
+                </tr>
+
+                <tr>
+                <td><span class="bld">Label: </span><%= albums[i].label %></td>
+                </tr>
+
+                <tr>
+                <td><span class="bld">Price: </span><%= albums[i].price %></td>
+                </tr>
+
+                <tr>
+                <td><span class="bld">Year: </span><%= albums[i].year %></td>
+              </tr>
+            <% } %>
+          </table>
+          </article>
+        </section>
+
+        <section>
+          <article>
+            <h2>Add new album</h2>
+
+            <form action="/albums" method="POST">
+              <table id="frm">
+              <tr>
+                <td><input type="text" placeholder="artist" name="artist"></td>
+                <td><input type="text" placeholder="title" name="title"></td>
+              </tr>
+              <tr>
+                <td><input type="text" placeholder="country" name="country"></td>
+                <td><input type="text" placeholder="label" name="label"></td>
+              </tr>
+              <tr>
+                <td><input type="text" placeholder="price" name="price"></td>
+                <td><input type="text" placeholder="year" name="year"></td>
+              </tr>
+              <tr>
+                <td><button type="submit">Save</button></td>
+              </tr>
+            </table>
+          </form>
+          </article>
+        </section>
+      </section><!--/ mainSectn-->
+
+      <section id="footer">
+
+      </section><!--/ footer-->
+    </section><!--/ wrapper-->
+  </body>
+</html>

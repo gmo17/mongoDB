@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+}
+
+h1{
+  font-size: 300%;
+  color: #fff;
+}
+
+h2{
+
+}
+
+.bld{
+  font-weight: bold;
+}
+
+#cat {
+  width: 100%;
+}
+
+#cat table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+}
+
+#cat th {
+  width: 200px;
+  text-align: center;
+}
+
+input {
+  border: none;
+}
+
+#cat article {
+    width: 100%;
+    background-color: ;
+    margin: 100px 0 100px 0;
+}
+
+#wrapper{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+#banner{
+  width: 79%;
+  height: 400px;
+  margin: 0 10% 0 10%;
+  padding: 1%;
+  clear: both;
+  position: ;
+  background-color: #333;
+}
+
+#mainSectn{
+  width: 81%;
+  height: auto;
+  margin: 0 10% 0 10%;
+  padding: ;
+  background-color: #fff;
+}
+
+#mainSectn a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#mainSectn article{
+  width: 98%;
+  height: ;
+  margin: 0;
+  padding: 1%;
+  background-color: ;
+}
+
+#footer{
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding: ;
+  position: relative;
+  bottom: 0;
+  clear: both;
+  background-color: #333;
+}
